@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #151719;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 225vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.Intro {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    order: 1; 
+    margin: auto;
+    flex-shrink: 1;
+}
+
+.name-animation {
+    position: absolute;
+    font-size: 10vw;
+    left: 37%;
+    margin-top: 35vh;
+    padding-bottom: 100vh;
+}
+
+.click1{
+    padding-left: 80vw;
+    padding-top: 80vh;
+    left: 70%;
+}
+
+.arrow {
+    width:7vw;
+    height: auto;
+}
+
+
+@keyframes name-animation {
+    0%, 40%, 100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-20px);
+    }
+}
+
+.name-animation span {
+    font-family: "Anton";
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: name-animation 1s infinite; 
+    animation-delay: calc(.1s * var(--i));
+}
+
+h1 {
+    display: block;
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+    font-size: 5vw;
+    text-decoration: overline;
+    margin-bottom: 8vh;
+    margin-left: 3vw;
+}
+
+a{
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+
+p {
+    display: block;
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+    font-size: 3vw;
+    margin-bottom: 4vh;
+    margin-left: 3vw;
+}
+
+ul {
+    display: block;
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+    font-size: 3vw;
+    margin-bottom: 4vh;
+    margin-left: 8vw;
+}
+
+.ran {
+    margin-bottom: 0;
+}
+
+th {
+    display: inline;
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+    font-size: 3vw;
+}
+
+td {
+    display: inline ;
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+    font-size: 3vw;
+}
+
+table {
+    border-spacing: 3vw 3vh;
+    font-family: 'Inconsolata', monospace;
+}
+
+
+.Main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    order: 2; 
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutme{
+    position: relative;
+    order: 1;
+    height: 5vh;
+    width: 100vw;
+    margin-top: 3vw;
+    flex-shrink: 1;
+}
+
+.mepic {
+    position: relative;
+    order: 2;
+    margin-top: 45vh;
+    margin-right: 10vw;
+}
+
+.click2 {
+    position: absolute;
+    margin-top: 80vh;
+    margin-left: 80vw;
+}
+
+.ContactMe {
+    position: relative;
+    height: 35vh;
+    width: 100vw;
+    margin: auto;
+    order: 3;
+}
+
+
+img {
+    height: auto;
+    max-width: 100%;
+    display: inline;
+}
+
+table{
+    position: relative;
+    color: white;
+}
+
+form {
+    position: absolute;
+    order: 2;
+}
+
+input, select, textarea {
+    width: 100%; /* Full width */
+    height: 7vh;
+    padding: 1vw 1vh; /* Some padding */ 
+    border: 0.1vh solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 1vh; /* Add a top margin */
+    margin-bottom: 2vh; /* Bottom margin */
+}
+
+label {
+    color: white;
+    font-size: 2vw;
+    font-family: 'Inconsolata', monospace;
+}
+  
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #696969;
+    color: white;
+    padding: 1vh 2vh;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 5vh;
+}
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #b5b5b5;
+}
+  
+  /* Add a background color and some padding around the form */
+.container {
+    display: block;
+    border-radius: 5px;
+    height: 10vh;
+    width: 80vw;
+    margin-left: 10vw;
+    position: absolute;
+}
+
+.con {
+    display: block;
+    position: absolute;
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+    font-size: 5vw;
+    text-decoration: overline;
+    margin-bottom: 20vh;
+    margin-left: 10vw;
+}
+
+.label {
+    margin-top: 10vh;
+}
+
+footer {
+    position: absolute;
+    background-color: #070707;
+    margin-top: 430vh;
+    height: 5vh;
+    width: 100%;
+    padding: 2vh;
+}
+
